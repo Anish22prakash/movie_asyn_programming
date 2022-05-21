@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./styles/login.css">
+        <link rel="stylesheet" href="./styles/index.css" />
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="signup.html">Signup</a></div>
+            <div><a href="login.html">Login</a></div>
+
+        </div>
+        <div id="login-form-div">
+           <h1 id="a2ns">Login</h1>
+            <form id="form" onsubmit="myfunction()"> 
+                <!--Write form input elements here-->
+                <input type="email" placeholder="Enter Email id" id="email"><br>
+                <input type="password" placeholder="Enter password" id="pass"><br>
+                <input type="submit">
+
+            </form>
+
+        </div>
+    </body>
+
+</html>
+
+<script>
+    var arr=JSON.parse(localStorage.getItem("details"))
+
+
+    function myfunction(){
+        event.preventDefault()
+
+        var form=document.getElementById("form")
+
+        var obj={
+            mail:form.email.value,
+            passowrd:form.pass.value
+        }
+        localStorage.setItem("logdet",JSON.stringify(obj))
+    
+    var obj=JSON.parse(localStorage.getItem("logdet"))
+
+    var check= arr.find(c => c.mail==obj.mail && c.passowrd==obj.passowrd);
+
+    if(check != undefined || check !=null){
+         alert("succesfully login")
+         window.location.href="index.html"
+     }
+
+     else{
+         alert("user doesn't exit")
+         
+     }
+
+    }
+</script>

@@ -1,0 +1,40 @@
+#login-form-div{
+    border: 1px solid;
+    height: auto;
+    width: 30%;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+   border-radius: 5px;
+   margin: auto;
+   margin-top: 5%;
+   
+   background:linear-gradient(20deg, #09d87f 50%, #03dacb 80%)
+}
+#a2ns{
+    margin: auto;
+    text-align: center;
+}
+form {
+  margin: 0px auto;
+  width: 50%;
+  margin-top: 5%;
+  padding: 30px;
+
+}
+input[type="email"],
+input[type="password"]{
+    text-align: center;
+    padding: 5px 5px;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+input[type="submit"]{
+    margin-top: 5%;
+    margin-left: 40%;
+    padding: 5px 15px;
+    background-color: teal;
+    border-radius: 5px;
+    font-size: 16px;
+}

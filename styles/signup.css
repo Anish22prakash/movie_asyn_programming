@@ -1,0 +1,41 @@
+#signup-form-div{
+    border: 1px solid;
+    height: 400px;
+    width: 30%;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+   border-radius: 5px;
+   margin: auto;
+   margin-top: 5%;
+   background:linear-gradient(20deg, #e6a9e2 50%, #d736a1 80%)
+}
+#a3n1s{
+    margin: auto;
+    margin-top: 2%;             
+    text-align: center;
+}
+form {
+margin: 0 auto;
+margin-top: 50px;
+width: 50%;
+padding: 30px;
+}
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"]{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+width: 50%;
+margin-top: 5%;
+margin-left: 30%;
+text-align: center;
+padding: 5px 5px;
+background-color: teal;
+border-radius: 5px;
+}
